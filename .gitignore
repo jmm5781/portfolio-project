@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Python virtual environment
+venv/
+
+# SQLite database
+db.sqlite3
+
+# macOS system files
+.DS_Store
+
+# IDE-specific files
+.idea/
