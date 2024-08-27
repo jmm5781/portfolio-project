@@ -168,9 +168,9 @@
                 <p>
                     <img class="detail-view-image-jobs" src="{{ job.image.url }}" alt="{{ job.summary }}">
                     <div>
-                        <a href="{% url 'detail' prev_job_id %}" class="btn btn-secondary my-2"><<</a>
-                        <a href="{% url 'home' %}" class="btn btn-secondary my-2">Back</a>
-                        <a href="{% url 'detail' next_job_id %}" class="btn btn-secondary my-2">>></a>
+                        <a href="{% url 'detail' prev_job_id %}" class="btn btn-secondary my-2 mx-2"><<</a>
+                        <a href="{% url 'home' %}" class="btn btn-secondary my-2 mx-2">Back</a>
+                        <a href="{% url 'detail' next_job_id %}" class="btn btn-secondary my-2 mx-2">>></a>
                     </div>
                 </p>
                 <h1 class="fw-light">{{ job.summary }}</h1>
