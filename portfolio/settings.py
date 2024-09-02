@@ -29,6 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
 ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
+# ALLOWED_HOSTS = ["localhost"]
 
 
 # Application definition
@@ -82,12 +83,12 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': BASE_DIR / 'db.sqlite3',
 
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'portfoliodb',
-        # 'USER': 'postgres',
-        # 'PASSWORD': 'postgres1',
-        # 'HOST': 'localhost',
-        # 'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'portfoliodb',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres1',
+        'HOST': 'localhost',
+        'PORT': '5432',
 
         # 'ENGINE': 'django.db.backends.postgresql',
         # 'NAME': 'portfoliodb_drxp',
@@ -101,6 +102,8 @@ DATABASES = {
 database_url = os.environ.get("DATABASE_URL")
 
 # DATABASES["default"] = dj_database_url.parse("postgresql://portfoliodb_drxp_user:EJmIuQF0RlMYWCjaXRlUReQrFZ3WJLB8@dpg-cr5upgrqf0us739t2mo0-a.virginia-postgres.render.com/portfoliodb_drxp")
+
+###### uncomment below for render.com
 DATABASES["default"] = dj_database_url.parse(database_url)
 
 
