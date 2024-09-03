@@ -12,3 +12,5 @@ db.sqlite3
 
 # IDE-specific files
 .idea/
+
+.env

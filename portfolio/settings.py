@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 import dj_database_url
 from pathlib import Path
+# from dotenv import load_dotenv
+# load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -103,7 +105,6 @@ database_url = os.environ.get("DATABASE_URL")
 
 # DATABASES["default"] = dj_database_url.parse("postgresql://portfoliodb_drxp_user:EJmIuQF0RlMYWCjaXRlUReQrFZ3WJLB8@dpg-cr5upgrqf0us739t2mo0-a.virginia-postgres.render.com/portfoliodb_drxp")
 
-###### uncomment below for render.com
 DATABASES["default"] = dj_database_url.parse(database_url)
 
 
